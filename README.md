@@ -1,0 +1,2 @@
+# ubuntuFixes
+In this repo, I will be keeping a log of any issues that arise during my switch to Ubuntu as my main OS. I will also be keeping a log of any fixes for these issues that I am able to come up with. This project will begin with a simple text file, and will eventually get written into a set of scripts that others can use to automatically fix these issues in the future. Eventually, I plan on compiling these scripts into a program that will make applying the fixes user friendly, and will allow Linux newbies to feel comfortable.
