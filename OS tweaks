@@ -46,3 +46,14 @@ success.
 
 ===============================
 
+20171017
+#github commit and push are seperate commands
+#commands still need to by typed into terminal. needs automation.
+auto add command
+auto commmit
+auto push
+
+===============================
+
+20171006
+protected directories disable drag and drop, as well as the "move to trash" option in the right-click menu. This forces users to type out move commands into terminal. This introduces opportunity for errors, and takes extra time.
