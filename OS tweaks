@@ -1,0 +1,48 @@
+#this will contain a log of all ubuntu issues, and how they were resolved.
+#first line in each set will contain a description of the issue.
+#subsequent lines will contain steps taken to resolve the issue.
+#if any variables need to be changed, the value that they are changed to will also be included.
+
+===============================
+
+20171013
+#dvd drive wont play movies
+sudo apt-get install libdvd-pkg
+#dvd drive does not have a region set
+sudo apt install -y regionset
+sudo regionset /dev/sr0
+# set value to 1
+
+===============================
+
+20171010
+#after installing pantheon desktop, unity desktop won't display background image.
+#research what the fix was at the time.
+#posted part of it on stack overflow as an answer.
+#removed elementary os repos.
+#used sudo to remove list files in protected directory
+#used autoremove
+#after it all, had to update pkg lists
+
+===============================
+
+20171214
+#experiencing high number of memory swaps.
+#researched zram/zswap
+#found a great article: https://askubuntu.com/questions/471912/zram-vs-zswap-vs-zcache-ultimate-guide-when-to-use-which-one
+#discovered these features were merged into the main kernel years ago
+#zram is good if you have no swap file. I have a swap file, so i need zswap
+found zswap files in: /sys/module/zswap/parameters
+"enabled" file contains the value N
+#going to change it to Y
+#tried these instructions: https://ubuntu-mate.community/t/enable-zswap-to-increase-performance/11302
+#those instructions failed. pluma couldn't open the file
+used nano to open /etc/defaults/grub
+added "zswap.enabled=1 zswap.compressor=lz4" inside the line "GRUB_CMDLINE_LINUX_DEFAULT="
+updated grub
+enabled lz4
+restarted pc.
+success.
+
+===============================
+
