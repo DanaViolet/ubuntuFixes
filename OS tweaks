@@ -3,6 +3,8 @@
 #subsequent lines will contain steps taken to resolve the issue.
 #if any variables need to be changed, the value that they are changed to will also be included.
 
+next revision, I should split fixes and improvements into two seperate files.
+
 ===============================
 
 20171013
@@ -46,7 +48,7 @@ success.
 
 ===============================
 
-20171017
+20171014
 #github commit and push are seperate commands
 #commands still need to by typed into terminal. needs automation.
 auto add command
@@ -57,3 +59,8 @@ auto push
 
 20171006
 protected directories disable drag and drop, as well as the "move to trash" option in the right-click menu. This forces users to type out move commands into terminal. This introduces opportunity for errors, and takes extra time.
+
+===============================
+
+20171018
+non administrator accounts cannot play DVDs.
