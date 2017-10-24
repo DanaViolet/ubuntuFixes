@@ -63,4 +63,7 @@ protected directories disable drag and drop, as well as the "move to trash" opti
 ===============================
 
 20171018
-non administrator accounts cannot play DVDs.
+wife's account cannot play DVDs.
+tried making her admin - didnt fix the issue.
+external drives stay mounted as belonging to the first user that logs on.
+solution: unmount and remount drives. dvds play now.
