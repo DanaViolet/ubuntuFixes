@@ -67,3 +67,4 @@ wife's account cannot play DVDs.
 tried making her admin - didnt fix the issue.
 external drives stay mounted as belonging to the first user that logs on.
 solution: unmount and remount drives. dvds play now.
+should automate this in the future with a script.
