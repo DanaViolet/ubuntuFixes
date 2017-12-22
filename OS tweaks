@@ -93,3 +93,8 @@ should automate this in the future with a script.
 
 20171210
 #computer still auto-locks if music is playing. This stops the music.
+
+=================================
+
+20171222
+#file explorer does not show size of folders. instead, it shows how many files are inside of it.
